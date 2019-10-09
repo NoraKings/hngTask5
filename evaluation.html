@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluation</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 20px 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .flex {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .form {
+        border: 1px solid #c3c3c3;
+        margin: 30px 0;
+    }
+
+    .form h3 {
+        margin-top: 20px;
+    }
+
+    .containter a{
+        margin: auto;
+    }
+
+    .box-1{
+        padding:40px;
+        border-bottom: 1px solid #c3c3c3;
+        }
+    .box-1 p{
+            color:rgb(8, 235, 243);
+            font-size: 0.9rem;
+            }
+
+    .box-2 {
+                padding:30px 15px;
+                border-bottom: 1px solid #c3c3c3;
+            }
+
+    .box-3 {
+                padding: 30px 15px;
+                border-bottom: 1px solid #c3c3c3;
+            }
+
+    .box-4 {
+                padding: 30px 15px;
+                font-size: 1.2rem;
+            }
+            
+    .form-element {
+                margin: 20px 0;
+                width: 30%;
+                display: inline-block;
+            }
+
+    input {
+                height: 40px;
+                margin-left: 30px;
+             }
+    .long {
+        width: 200px;
+    }
+
+    .box-4 span {
+        text-decoration: underline;
+    }
+
+    .btn {
+                margin-top: 30px;
+                background: #ddd;
+                color: #fff;
+                padding: 10px 30px;
+                text-decoration: none;
+             }
+    
+    @media(max-width:500px) {
+        .form-element {
+            width: 100%;
+            display: block;
+        }
+
+        input {
+            margin-left: 0;
+        }
+    }
+
+    @media(max-width:770px) and (min-width:501px){
+        .form-element {
+            width: 50%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Evaluation</h1>
+        <p>Please input the required details in the form below.</p>
+        <div class="form">
+            <div class="box-1">
+               <div class="flex"> <p>required</p></div>
+                <hr>
+            </div>
+            <div class="box-2">
+                <h3>Billing</h3>
+                <div>
+                    <div class="form-element">
+                        <label for="hours">How long (in hours) will it
+                        take you to complete this project? 
+                        </label>
+                      </div>
+                    <input type="text" name="hours" placeholder="Hours">
+                </div>
+                <div>
+                    <div class="form-element">
+                    <label for="amount">How long do you charge per hour?</label>
+                    </div>
+                    <input type="text" name="amount" placeholder="NGN 0.00">
+                </div>
+                <div>
+                    <div class="form-element">
+                    <label for="date">Project starts/ends</label>
+                    </div>
+                    <input type="date" name="date" placeholder="">
+                </div>
+            </div>
+            <div class="box-3">
+                <h3>Expenses</h3>
+                <div>
+                <div class="form-element">
+                    <label for="cost">How much will it cost you to power your 
+                    device or equipment for this project? </label>
+                    </div>
+                    <input type="text" name="cost" placeholder="NGN 0.00">
+                </div>
+                <div>
+                    <div class="form-element">
+                    <label for="">Are you subcontracting to anyone?</label>
+                    </div>
+                    <input class="long" type="text" name="" placeholder="E.g. Illustrator, Consulting...">
+                </div>
+                <div>    
+                    <div class="form-element">
+                    <label for="">How much will they be paid?</label>
+                    </div>
+                    <input type="text" name="" placeholder="NGN 0.00">
+                </div>
+
+                <h3>Expertise</h3>
+                <div>
+                    <div class="form-element">
+                    <label for="">How many similar projects have you done before?</label>
+                    </div>
+                    <input type="text" name="">
+                </div>
+                <div>
+                    <div class="form-element">
+                    <label for="">Out of 5 how would you rate your experience level in executing
+                        this projects
+                    </label>
+                    </div>
+                    <input type="text" name="" id="">/5
+                </div>
+        </div>
+            <div class="box-4">
+                <p>Currency: <span>NGN</span></p>
+            </div>
+        </div>
+        <a class="btn" href="">NEXT</a>
+    </body>
+</html>
