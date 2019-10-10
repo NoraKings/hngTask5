@@ -11,6 +11,46 @@
         padding: 0;
         box-sizing: border-box;
     }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 60px;
+        border-bottom: 1px solid #c3c3c3;
+    }
+
+    .nav1 {
+        display: inline;
+        border: 1px solid #ddd;
+        padding: 25px 20px;
+    }
+
+    .nav2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        background: #ddd;
+                color: #fff;
+                padding: 10px 30px;
+                text-decoration: none;
+               
+                padding: 14px 80px;
+                font-family: Ubuntu;
+                font-style: normal; 
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 32px;
+                text-align: center;
+    }
+
     #container {
     margin: auto;
     max-width: 1100px;
@@ -80,13 +120,25 @@
     }
 
     .btn {
-                margin-top: 30px;
+               margin-top: auto;
                 background: #ddd;
                 color: #fff;
                 padding: 10px 30px;
                 text-decoration: none;
+               
+                padding: 21px 100px;
+                font-family: Ubuntu;
+                font-style: normal; 
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 32px;
+                text-align: center;
              }
     
+    .next {
+        text-align: center;
+    }
+        
     @media(max-width:500px) {
         .form-element {
             width: 100%;
@@ -103,9 +155,31 @@
             width: 50%;
         }
     }
+
+    @media(max-width:700px){
+        .nav3{
+            display: none;
+        }
+    }
     </style>
 </head>
 <body>
+        <nav>
+            <div>
+                <div class="nav1">
+                <a href=""><img src="https://res.cloudinary.com/sape123/image/upload/v1570620630/clear_24pxmultip_izmkxk.png"></a>
+                </div>
+                <div class="nav1">
+                <a href=""><img src="https://res.cloudinary.com/sape123/image/upload/v1570620347/Vectorangle_left_o4tbyh.png"></a>
+                </div>
+            </div>
+                <div class="nav2">
+                <h3>Create Estimate</h3>
+                </div>
+                <div>
+                <a href="" class="nav3">NEXT</a>
+                </div>   
+            </nav>
     <div id="container">
         <h1>Evaluation</h1>
         <p>Please input the required details in the form below.</p>
@@ -179,6 +253,8 @@
                 <p>Currency: <span>NGN</span></p>
             </div>
         </div>
+        <div class="next">
         <a class="btn" href="">NEXT</a>
+        </div>
     </body>
 </html>
